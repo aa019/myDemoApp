@@ -32,9 +32,10 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
-    public void testApp()
+    public void testByZero()
     {
-        assertTrue( true );
+      ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
+      assertTrue(new App().search(array, 0, 0) == -1);
     }
 
     public void testFound() {
